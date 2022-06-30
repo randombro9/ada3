@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 
@@ -63,11 +62,16 @@ printf("\n");
 
 int main()
 {
-int arr[] = {12, 11, 13, 5, 6, 7};
-int n = 6;
+    int n;
+    printf("enter the size of the array \n");
+    scanf("%d",&n);
+    int arr[n];
+    printf("enter array elements \n");
+    for(int i = 0 ; i <n ; i++){
+        scanf("%d",&arr[i]);
+    }
 heapSort(arr, n);
 printf("Sorted array is \n");
 printArray(arr, n);
 
 }
-
